@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <title>Form</title>
@@ -512,3 +513,141 @@
     </form>
   </body>
 </html>
+=======
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="Styles/index.css" rel="stylesheet">
+    <link href="Styles/SerachBar.css" rel="stylesheet">
+    <link href="Styles/List.css" rel="stylesheet">
+    <link href="Styles/Buttons.css" rel="stylesheet">
+    <link href="Styles/UpperSection.css" rel="stylesheet">
+</head>
+<body>
+<script>
+    function openForm(id) {
+        document.getElementById('button-open').style.display="none";
+        document.getElementById(id).style.display='flex';
+    }
+    function closeForm(id) {
+        document.getElementById('button-open').style.display = "flex";
+        document.getElementById(id).style.display = "none";
+
+
+    }
+    function toggle(id,id2,id3){
+
+        if( document.getElementById(id).style.border != "none"){
+            document.getElementById(id).style.border = "none";
+            document.getElementById(id2).style.display="flex";
+            document.getElementById(id3).style.opacity = 1;
+        }else{
+            document.getElementById(id).style.border = "1px solid #888888";
+            document.getElementById(id2).style.display="none";
+            document.getElementById(id3).style.opacity = 0.5;
+        }
+
+
+    }
+
+</script>
+<button id="button-open" class="save" onclick="openForm('my-form')">Show Form</button>
+<form class="form" id="my-form">
+
+<div class="sec1">
+<h1 id="text">Add members to Front-end development team</h1>
+    <div id="ESC" onclick="closeForm('my-form')">
+        <img src="Assets/ESC.png" width="50" height="50">
+        <span id="span">ESC</span>
+    </div>
+</div>
+
+    <div class="sec2">
+<div class="container-search">
+<img src="Assets/search.png" width="20px" height="20px" class="img-serach">
+    <input placeholder="Find members" class="input-search">
+</div>
+
+    </div>
+
+
+    <div class="sec3">
+
+            <div class="item"  id="item1" >
+                <img src="Assets/person.jpg" width="30px" height="30px" class="person">
+                <span class="member">Caroline Bloeme</span>
+                <div class="correct" id="div1" onclick="toggle('div1','img1','item1')">
+                    <img src="Assets/correct.png" width="100%" height="100%" class="img-appear" id="img1">
+                </div>
+            </div>
+
+
+        <div class="item" id="item2" >
+            <img src="Assets/person.jpg" width="30px" height="30px" class="person">
+            <span class="member">Caroline Bloeme</span>
+            <div class="correct" id="div2" onclick="toggle('div2','img2','item2')">
+            <img src="Assets/correct.png" width="100%" height="100%" class="img-appear"  id="img2">
+            </div>
+        </div>
+
+
+        <div class="item" id="item3">
+            <img src="Assets/person.jpg" width="30px" height="30px" class="person">
+            <span class="member">Caroline Bloeme</span>
+            <div class="correct" id="div3" onclick="toggle('div3','img3','item3')">
+                <img src="Assets/correct.png" width="100%" height="100%" class="img-appear" id="img3" >
+            </div>
+        </div>
+
+
+        <div class="item" id="item4">
+            <img src="Assets/person.jpg" width="30px" height="30px" class="person">
+            <span class="member">Caroline Bloeme</span>
+            <div class="correct" id="div4" onclick="toggle('div4','img4','item4')">
+                <img src="Assets/correct.png" width="100%" height="100%" class="img-appear" id="img4">
+            </div>
+        </div>
+
+
+        <div class="item" id="item5">
+            <img src="Assets/person.jpg" width="30px" height="30px" class="person">
+            <span class="member">Caroline Bloeme</span>
+            <div class="correct" id="div5" onclick="toggle('div5','img5','item5')">
+                <img src="Assets/correct.png" width="100%" height="100%" class="img-appear" id="img5">
+            </div>
+        </div>
+
+
+        <div class="item" id="item6">
+            <img src="Assets/person.jpg" width="30px" height="30px" class="person">
+            <span class="member">Caroline Bloeme</span>
+            <div class="correct" id="div6" onclick="toggle('div6','img6','item6')" >
+                <img src="Assets/correct.png" width="100%" height="100%" class="img-appear" id="img6">
+            </div>
+        </div>
+
+        <div class="item" id="item7">
+            <img src="Assets/person.jpg" width="30px" height="30px" class="person">
+            <span class="member">Caroline Bloeme</span>
+            <div class="correct" id="div7" onclick="toggle('div7','img7','item7')">
+                <img src="Assets/correct.png" width="100%" height="100%" class="img-appear" id="img7" >
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="sec4">
+        <div class="container">
+            <button class="cancel">Cancel</button>
+            <button class="save">SAVE</button>
+        </div>
+
+
+    </div>
+
+</form>
+</body>
+</html>
+>>>>>>> 97325a5e9b5831974af0f06b0329a2b0aab61b71
