@@ -1,0 +1,84 @@
+.button {
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.button--save {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(92, 142, 231, 1),
+    rgba(92, 142, 231, 0.5)
+  );
+  font-family: Calibri;
+  font-size: large;
+  letter-spacing: 1px;
+  color: white;
+  border: none;
+  animation: colorChanging 5s infinite;
+}
+.button--show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(92, 142, 231, 1),
+    rgba(92, 142, 231, 0.5)
+  );
+  font-family: Calibri;
+  font-size: large;
+  letter-spacing: 1px;
+  color: white;
+  border: none;
+  animation: colorChanging 5s infinite;
+}
+@keyframes colorChanging {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: purple;
+  }
+}
+@keyframes colorChanging2 {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: purple;
+  }
+}
+.button--save:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    rgba(92, 98, 200, 1),
+    rgba(92, 96, 220, 0.6)
+  );
+}
+.button--cancel {
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: large;
+  font-family: Calibri;
+  border: 1px rgba(125, 125, 125, 0.5) solid;
+  background-color: transparent;
+  animation: colorChanging2 5s infinite;
+  font-weight: bold;
+}
+.button--cancel:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    rgba(125, 125, 125, 1),
+    rgba(125, 125, 125, 0.5)
+  );
+}
+#button-open {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 120px;
+  height: 50px;
+}
